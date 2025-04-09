@@ -1,0 +1,684 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fuentes (las saque de google fonts)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!-- Para iconos (de Ioconics)-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+
+<body class="font-[Winky Sans] bg-blue-100 "> 
+    <header class="bg-white">
+        <nav class="flex justify-between items-center w-[92%] mx-auto " >
+            <div>
+                <img width="60" src="https://png.pngtree.com/png-vector/20240821/ourmid/pngtree-pokeball-ash-png-image_13275981.png" alt="...">
+            </div>
+            <div class="nav-links absolute top-0 left-0 w-full bg-white p-5 shadow-md hidden md:flex md:static md:w-auto md:shadow-none">
+                <ul class="md:flex md:flex-row flex-col md:items-center gap-4">    
+                    <li class="bg-blue-300 rounded-full hover:bg-blue-400 px-5 py-2 text-center" onclick="mostrarContenido('semestre-0')">
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li class="bg-blue-300 rounded-full hover:bg-blue-400 px-5 py-2 text-center" onclick="mostrarContenido('semestre-1')">
+                        <a href="#">Primer semestre</a>
+                    </li>
+                    <li class="bg-blue-300 rounded-full hover:bg-blue-400 px-5 py-2 text-center" onclick="mostrarContenido('semestre-2')">
+                        <a href="#">Segundo semestre</a>
+                    </li>
+                    <li class="bg-blue-300 rounded-full hover:bg-blue-400 px-5 py-2 text-center" onclick="mostrarContenido('semestre-3')">
+                        <a href="#">Tercer semestre</a>
+                    </li>
+                    <li class="bg-blue-300 rounded-full hover:bg-blue-400 px-5 py-2 text-center" onclick="mostrarContenido('semestre-4')">
+                        <a href="#">Cuarto semestre</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="md:hidden">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <div id="semestre-0" class="=hidden m-8"> 
+        <h1 class="bg-orange-300 rounded-full hover:bg-orange-300 px-5 py-2 display: inline-block"><b> Inicio </b></h1>
+        <p class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> 
+            Para darle un inicio al tema de CSS y HTML vamos a hacer una simple introducción tomando
+            en cuenta las materias de primer año, como las pase yo personalmente y mi opinión de los
+            profesores que nos dieron dichas materias
+            Cabe aclarar, todas las opiniones tanto de las materias como de los profesores son mera 
+            subjetividad mía basada en la experiencia que tuve yo, no es definitorio que otras personas 
+            tengan la misma definición de estos
+        </p>
+            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/estudiante-agitando-la-mano-9630590-7866693.png?f=webp" alt="...">
+
+    </div>  
+    <div id="semestre-1" class="hidden m-8">
+        <h1 class="bg-orange-300 rounded-full hover:bg-orange-300 px-3 py-2 display: inline-block"> <b>Primer semestre </b></h1>
+        
+        <h1></h1>
+            <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b>Analisis Matematico I </b></h3>
+            <p></p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                Análisis matemático fue una materia que me abrió los ojos con respecto a la matemática, que para
+                ese entonces consistía en simple resolución de ejercicios sin complicarme mucho la vida, ni siquiera comprendía
+                bien el concepto de lo que es una función. Una materia que si bien me complico la vida, al final resulto
+                ser de mucha utilidad.
+            </p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                El profesor que me dio la teoría fue Ricardo Burgos, para ser honesto yo me dormía en la clase, me costaba bastante
+                empezar a darle atención, en especial las jornadas donde había muchas materias, pero la verdad fue un gran profesor
+                se notaba que le importaba la materia que estaba dando y le ponía mucho empeño. 
+
+            </p>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                El profesor que se encargó de la práctica fue Pedro Mamani, un muy buen profesor que se dio la parte práctica lo más entendible
+                para que aquellos que no cursamos en una técnica pudiésemos entender, hasta el día de hoy lo considero
+                el mejor profesor de practica de ciencias duras que tuve jamás, pues aparte de explicar las fórmulas se encargaba
+                de dar el motivo del por qué son asi. 
+
+            </p>
+
+
+
+            <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b> Algebra Lineal I </b></h3>
+            <p></p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                Fue una materia que abrió mi mente a la abstracción por asi decirse. Introdujo conceptos abstractos en ese momento como 
+                lo pueden ser los espacios vectoriales, los vectores en sí y otras cuestiones que durante el resto de los semestres serian
+                bastante usados, en especial las matrices.
+
+            </p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                La profesora que nos impartió la teoría fue la profesora Jesica Gallegos, la verdad daba bastante claro la teoría, 
+                recuerdo que las clases eran relativamente cortas porque la profesora se encargaba de dar las fórmulas y las demostraciones
+                bastante claras sin dejar lugar a dudas. Tambien permitía mucho la participación en clases de los alumnos con respecto
+                a las dudas que tuviésemos, no tenía problema en parar y contestar todo. 
+
+            </p>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                El profesor encargado de la práctica nuevamente fue Pedro Mamani, no hay más palabras que decir de él, prácticamente
+                la opinión se resume en el apartado de análisis matemático 
+
+            </p>
+
+
+
+            <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b> Fundamentos de la informatica </b></h3>
+            <p></p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                Esta materia fungió como la primera apertura al mundo de la informática. Al principio fue un poco incomodo
+                el tema de realizar pseudocodigo a papel, pero se entiende el porqué. Fue muy útil ya que sirvió para empezar
+                a razonar el Código como se debía.
+
+            </p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                La profesora que se encargó de dar tanto la teoría como la práctica fue la Profesora Lucero. La considero 
+                una muy buena profesora por el lado que incentiva que los alumnos practiquen por su cuenta, tambien es bastante
+                clara y concisa resolviendo dudas de los alumnos, dando ejemplos prácticos y la explicación del funcionamiento del mecanismo
+            </p>
+
+
+
+            <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b> Quimica para Ingenieros </b></h3>
+            <p></p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"   > <u>Mi opinión</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                Es una materia bastante útil sea la ingeniería que sea, plantea las bases de la composición de la materia, lo que
+                podemos aplicar a todo tipo de ámbito. Aun parecerme muy útil la materia la verdad para mí fue una tortura, la tuve
+                que recursar porque falle en el segundo parcial. Si bien ahora está finalizada fue mi primera experiencia a estar libre 
+                en una materia
+            
+            </p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                La profesora Heredia nos daba la teoría, considero que a veces daba la clase a una velocidad acelerada, pero
+                es entendible al ver la cantidad de material que tiene que dar en tan poco tiempo. A pesar de la velocidad de su clase
+                siempre estuvo abierta a resolver dudas de los alumnos cuando se lo proponen. Considero que es una buena profesora.
+
+            </p>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                La profesora que daba la práctica fue la profesora Mazzuca, si pase la materia es gracias a ella, personalmente siempre
+                tuve dificultades con el área de la química y la biología pero la profesora Mazzuca lo explico bastante bien, incluso 
+                para alguien como yo que encontraba dificultades en la materia, excelente profesora la verdad. 
+
+            </p>
+
+
+
+            <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b> Prueba de suficiencia oral y escrita </b></h3>
+            <p></p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                Creería que fue la materia más fácil del semestre, las clases eran principalmente trabajos grupales y dinámicas en grupo
+                Lo que si saco a flote de la materia es que allí conocí a mis amigos con los que sigo en carrera hasta el día de hoy
+
+            </p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                No tengo mucho que decir de la profesora, la verdad ni siquiera recuerdo su nombre, lo único que recuerdo claro
+                es que a veces en las clases se encontraba su hija ya que salía de su colegio a esa hora.
+
+            </p>
+
+
+
+            <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b> Filosofia </b></h3>
+            <p></p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                Honestamente fui con bajas expectativas para esta materia, no tenía mucho interés a lo que podrían enseñar durante el semestre.
+                Grata fue mi sorpresa al ver que resulto ser una de mis materias favoritas. sirvió como método para ampliar la visión que tenia
+                de la filosofía y de la vida en general, se nos enseñó a ser mejores personas por asi decirse y tener cierta ética a la hora
+                de programar y ejercer como ingenieros.
+
+            </p>
+            <h4  class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                Leandro Paredes fue el encargado de la Comisión. Si bien en otras comisiones no se era tan riguroso con respecto a la asistencia, en la 
+                Comisión del profesor si, además de tener especial cuidado con la entrega de los trabajos prácticos. Esto aun parecer molesto al inicio
+                creo que provoco que se genere un sentimiento de responsabilidad. Además, Sus clases eran muy interesantes, al menos asi
+                las hacia parecer el con su método de enseñanza
+
+            </p>
+
+    </div>
+    <div id="semestre-2" class="hidden m-8">
+        <h1 class="bg-orange-300 rounded-full hover:bg-orange-300 px-3 py-2 display: inline-block"> <b>Segundo semestre </b></h1>
+        
+        <h1></h1>
+            <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b>Analisis Matematico II </b></h3>
+            <p></p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                Análisis matemático II fue una materia que si bien la sufrí por tener poco conocimiento de los temas tratados
+                no fue tan dificultosa. Recuerdo que el final me costó un poco porque me toco una integral que no supe resolver
+                en ese momento, pero en general fue una materia tranquila
+
+            </p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                El profesor que me dio la teoría fue Ricardo Burgos, sin mucha diferencia con análisis matemático I, tambien me 
+                costaba no dormirme en sus clases. No porque estas fuesen aburridas, sino más bien por malos hábitos de sueño
+                que yo tenía en ese momento. 
+
+            </p>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                El profesor que se encargó de la práctica fue Pedro Mamani, Ya las palabras a el se dedicaron en el apartado
+                de análisis matemático I, gran profesor.
+
+            </p>
+            <p></p>
+
+            <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b> Algebra Lineal II </b></h3>
+            <p></p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                Al igual que en Algebra Lineal I, fue otra apertura a la abstracción. Esta vez más orientada a los espacios y figuras
+                en campos. La materia si me costó al inicio, aunque por un motivo más de falta de iniciativa. En si no es complicada
+                pero se deben tener bien en claro las demostraciones y los conceptos antes de poder empezar a realizar los
+                ejercicios
+
+            </p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+            <p></p>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                La profesora que nos impartió la teoría fue la profesora Jesica Gallegos, nuevamente, muy clara su teoría en 
+                relación a la materia.
+
+            </p>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                El profesor que se encargó de la práctica fue Pedro Mamani, Ya las palabras a él se dedicaron en el apartado
+                de análisis matemático I, gran profesor.
+
+            </p>
+
+
+
+            <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b> Introduccion de la informatica </b></h3>
+            <p></p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                No fue tan distinto a fundamentos a la informática. Pero si algo tengo que destacar fue que iniciamos con los
+                proyectos. Empezamos a ver conceptos de modularizacion y funciones más complejas. Si bien seguimos rindiendo
+                a papel, empezamos a ver métodos de ordenamiento y demás en python, por lo que la materia fue bajo mi punto
+                de vista mucho más didáctica que fundamentos. 
+
+            </p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                El profesor encargado de la teoría fue Freddy Aprile, excelente profesor. Si bien en algunas clases no llegue
+                a estar tan atento como me hubiese gustado por temas de horarios, gracias a que daba los contenidos de 
+                forma clara es que pude estudiar de los conceptos que el daba en las diapositivas. 
+
+            </p>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                La profesora que hizo la práctica fue nuevamente Lucero. Es una constante en mi carrera que en las materias
+                relacionadas a la programación siempre de una u otra forma está presente, ya sea como profesora de practica
+                o de teoría. Sin más palabras, excelente profesora. 
+
+            </p>
+
+
+
+            <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b> Fisica I </b></h3>
+            <p></p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                Tal vez la materia más difícil de este semestre, física I bajo mi punto de vista representa la primera barrera
+                para varios. Recuerdo que para el segundo examen parcial aproximadamente 2/3 de los que cursaban se quedaron
+                libres. Si bien era promocional un porcentaje bajo de alumnos alcanzo este logro
+
+            </p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                El profe que nos daba la práctica era el profesor Giubergia, era bueno explicando, se notaba que le gustaba enseñar
+                pero mi mayor problema era el horario de cursada, al ser a la mañana me costaba mantenerme despierto.
+
+            </p>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                Por otro lado, quien nos daba la práctica era el profesor Soria, iba bastante rápido y daba los ejercicios
+                del tp uno tras otro. Era buena la clase pero a veces me hubiese gustado saber más el porqué de las cosas.
+
+            </p>
+
+
+
+            <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b> Prueba de suficiencia en habla inglesa </b></h3>
+            <p></p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                No recuerdo nada de la materia, prácticamente no la curse, el primer día rendimos un examen en el cual podríamos
+                promocionar directamente la materia. Lo aprobé y pasé rápidamente.
+
+            </p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                No tengo mucho que decir de la profesora, la verdad ni siquiera recuerdo su nombre, promocione la materia el primer día
+                con el examen que hacen al inicio. No tuve que asistir durante el resto del semestre al aula.
+
+            </p>
+
+
+
+    </div>
+    <div id="semestre-3" class="hidden m-8">
+        <h1 class="bg-orange-300 rounded-full hover:bg-orange-300 px-3 py-2 display: inline-block"> <b>Tercer semestre </b></h1>
+        
+        <h1></h1>
+            <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b>Analisis Matematico III </b></h3>
+            <p></p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                Análisis matemático III era la materia que más temía, todo el tiempo previo a esta me fueron inflando las expectativas
+                 sobre lo que se enseñaba y lo complicado que era. Si fue complicada, pero no fue tan complicada como me lo pintaron. Esto
+                  es debido a que cuando me toco cursarla no fuese el profesor Funes quien realizaba los parciales. Sino la profesora
+                   Mendez. Una materia muy complicada, pero si se ven los temas con anterioridad seguro se puede aprobar.
+
+            </p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+            <p></p>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                La profesora Mendez se encargó de la teoría de análisis III, ella fue bastante flexible con algunos temas y lo
+                especializo para que sea útil para la informática.
+
+            </p>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                El profesor que se encargó de la práctica fue Pedro Mamani, Ya las palabras a el se dedicaron en el apartado
+                de análisis matemático I, Para análisis III se lució, algunos de los conceptos complicados los sobre explicó en su
+                hora y fue mucho más fácil entender la materia gracias a él.
+
+            </p>
+
+
+
+            <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b> Arquitectura de computador </b></h3>
+            <p></p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                Esta fue una materia anual, una bastante larga y que requiere bastante atención durante todo el año. Recuerdo que
+                 los trabajos prácticos debían entregarse uno por semana, y si bien podemos reprobar uno que otro, lo ideal era no hacerlo 
+                 ya que había un límite de estos que podríamos reprobar. Por otro lado, el final de esta materia fue bastante complicado por el
+                  simple hecho de que era una materia larga, mucho contenido por ver. Recuerdo que durante el examen que fue oral me puse muy 
+                  nervioso y no pude dar todo lo que estudié. Si bien aprobé me hizo dar cuenta de muchas limitaciones que tengo yo como
+                  persona. 
+
+            </p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                Quien nos dio la teoría fue el profesor Armando, se nota que sabe bastante del tema tanto del derecho como
+                 del revés. Siempre se preocupaba que entendiésemos todos los temas antes de avanzar a uno de más adelante.
+                 Pese a los dolores de cabeza que me provoco la materia creo que fue un muy buen profesor.
+
+            </p>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                El profesor que se encargó de la práctica fue Lugones. A veces llegaba un poco tarde, pero era lo de menos. 
+                Considero que fue bastante bueno por el lado de los trabajos prácticos, si bien eran semanales nunca fueron pesados
+                cómo podrían ser en otras materias, más que nada era la mera constancia de trabajar en su materia.
+
+            </p>
+
+
+
+            <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b> Lenguajes I </b></h3>
+            <p></p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                No fue tan distinto a introducción a la informática. Pero si algo tengo que destacar fueron los tratamientos a conceptos como
+                programación orientada a objetos y el tratamiento de archivos. Dos cosas extremadamente útiles a la hora de programar. Lo único
+                que a veces me daba urgencia eran los coloquios, de los cuales yo tenía pavor de desaprobar, aunque al final ninguno resulto
+                complicado de aprobar
+
+            </p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+            <p></p>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                El profesor encargado de la teoría fue Freddy Aprile, hizo tan bien su trabajo como en introducción por lo que no tengo mas 
+                palabras a favor ni en contra de el.  
+
+            </p>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                La profesora que hizo la práctica fue Cardozo. Me gustaba que había una parte de la clase en la cual ella explicaba
+                y luego nos permitía trabajar con lo recién enseñado. Recuerdo que daba ejemplos prácticos sobre el tema de los tps y como
+                 podríamos desarrollar el ejercicio con nuestros criterios.
+
+            </p>
+
+
+
+            <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b> Fisica II </b></h3>
+            <p></p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                Tal vez la materia más difícil de este semestre, al igual que física I. Había muchos conceptos de los que yo desconocía
+                previos a la materia por lo que el entendimiento de todo se me resulto complicado en varias partes. Si pude aprobar la 
+                materia fue gracias a la profesora de practica que ayudaba con la comprensión de los temas. Es una materia en la cual debemos
+                 ver muchos casos en los que se aplica las leyes vistas en ámbitos reales, si se observan las aplicaciones es más fácil aprobar. 
+
+            </p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+            <p></p>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                El profe que nos daba la práctica era el profesor Giubergia, no hay más palabras que decir, pues fue bastante similar a 
+                como dio la teoría en física I.
+
+            </p>
+            <p> 
+                La profesora cabrera fue seguramente la mejor profesora de practica que tuve además del profesor Mamani. 
+                Ambos me ayudaron bastante a poder aprobar sus respectivas materias. Muy similar al profesor Armando, Cabrera 
+                de la mejor forma enseñaba los temas hasta que los comprendíamos completamente. Recuerdo que cada alumno
+                paso al menos una vez al pizarrón en su materia, ya que iba por lista mencionándonos de forma que ninguno se quede
+                atrás
+
+            </p>
+
+
+
+            <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b> Estructura de datos </b></h3>
+            <p></p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                Esta materia fue muy útil en todos los ámbitos, además de profundizar la programación orientada a objetos, tambien fue una aproximación a
+                las estructuras que más tarde aplicaríamos en muchos ámbitos y como armar nuestras propias estructuras. Tambien vimos nuestro 
+                primer lenguaje fuertemente tipado que es Java. Fue complicado al inicio, pero en general la considero una de mis materias favoritas en lo
+                que va de cursado. 
+
+            </p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                Quien nos dio la teoría fue la profesora Macaione. Es una mujer muy relajada, pero tal y como el profesor Armando se 
+                notaba que sabia los temas del derecho y del revés. Ella misma preparaba material de estudia en el apartado de la 
+                plataforma correspondiente con los cuales podríamos estudiar para los parciales
+
+            </p>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block">
+                Por otro lado, en la práctica encontramos nuevamente a la profesora Lucero. Como siempre buena profesora, durante 
+                la cursada daba ejemplos prácticos y teóricos lo todo lo que estábamos viendo, por lo que la materia fue algo mas
+                fácil de pasar gracias a ella. 
+
+            </p>
+
+
+            <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b> Teologia </b></h3>
+            <p></p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                Esta fue otra materia anual. Recuerdo que, si bien no era complicada como tal, yo me ensañe en conseguir la 
+                promoción, ya que el rendir la materia como final implicaba rendir con un profesor distinto al cual cursábamos.
+                 No fue una materia complicada, lo más que puedo recalcar fue la exposición que realizamos a forma de parcial
+                  que expandió el tema de la encíclica Laudato Si, una encíclica que resulta útil conocer para Doctrina.
+
+            </p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                Nuestra única profesora fue Cintia. Era bastante buena explicando, no me resultaba nada mala su clase
+                 pues era similar a la teología que vi durante mis años de secundaria. Recuerdo que era prima de uno
+                  de mis compañeros y era bastante gracioso ver como interactuaban ambos. Una muy buena profesora.
+
+            </p>
+
+
+
+            <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b> Probabilidad y Estadistica </b></h3>
+            <p></p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                Fue la primera materia que cursábamos con el profesor Funes, pero no sería la última. Los conceptos que
+                 presenta la materia son bastante palpables en el mundo real, y resulta muy util conocer cómo aplicar cada uno de los 
+                 conceptos estadísticos vistos. Tal vez es pesada al inicio para quien no tuvo una aproximación a la estadística 
+
+            </p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                El profesor Funes nos dio la Teoría. Se lo tiene al profesor Funes como uno muy complicado de pasar en la carrera
+                pero la verdad es otra, es un muy buen profesor que sabe de muchos aspectos de la matemática de punta a punta. Además de 
+                saber explicar los conceptos siempre los acompaña de un ejemplo práctico. Tal vez lo único que resulta pesado de su clase es 
+                la duración, que ocupa todas las tres horas disponibles, pero viendo los temas que trata, la verdad no es para menos. 
+                Un excelente profesor que es medianamente infravalorado.
+
+            </p>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block">
+                Por otro lado, en la práctica tuvimos al profesor Acuña. Es términos de velocidad puede ser el profesor que avanza mas 
+                por clase. Si bien explica bien no te podes colgar en su clase si no quieres perderte. 
+
+            </p>
+            <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b> Economia de la empresa </b></h3>
+            <p></p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                Fue una materia bastante relajada. Mas que nada era teórico, si bien había practica no era la parte troncal 
+                del asunto. Me hizo acordar bastante a la economía y la administración vistas en secundaria.
+
+            </p>
+            <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+                No creo que enseñase mal, pero a veces me resultaban pesadas las clases. Más que nada por la duración, aunque 
+                a veces había un receso entre medio de la teoría, hubo otras veces donde no había, por lo que resultaba un 
+                poco cansador. Fuera de eso es buen profesor, la única lastima es el tema del ritmo en el que se toma la materia. 
+
+            </p>
+            <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block">
+                Si el profesor de teoría tenía un ritmo más constante, pero algo lento, el de practica era todo lo contrario. Sus clases 
+                eran puramente de practica y no podías dormirte en un tema para no pasarlo de largo. Lo positivo del profesor es que siempre
+                 podía detenerse si alguien se lo pedía o si no comprendía un tema. Buen profesor
+
+            </p>
+
+
+
+    </div>
+    <div id="semestre-4" class="hidden m-8">
+
+
+        <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b> Calculo Avanzado </b></h3>
+        <p></p>
+        <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+        <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+            Fue bastante distinta a lo que fue su predecesora análisis matemático III, pues más que los conceptos que veíamos antes exploramos otros bastante desconectados de estos.   
+            Fue una materia complicada, pero con suficiente practica y entendimiento se podría pasar. Personalmente casi me quedo libre dos veces. 
+            Los parciales del profesor Funes no son imposibles, siempre y cuando tengas los conocimientos de los temas podes aprobar, pero aun asi
+             resultan complicados
+
+        </p>
+        <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+        <p></p>
+        <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+            No hay mucho que decir de Funes más que lo que se mencionó en el apartado de Probabilidad y Estadística I, 
+            es un excelente profesor
+
+        </p>
+        <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block">
+            Sería la última vez que tendría al profesor Mamani en práctica, durante este cursado se lució con las definiciones
+            y los ejercicios que explicaba en clases. Definitivamente aprobé la materia gracias a él. Luego de reprobar los dos parciales 
+            él fue quien ayudo a preparar algunas cuestiones del recuperatorio para los que estábamos en su Comisión. 
+
+        </p>
+
+        <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b> Fisica Aplicada </b></h3>
+        <p></p>
+        <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+        <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+            Esta materia es muy continuista con lo que es física I y II, no es complicada, hasta diría que es una materia
+             relativamente fácil. Aun a pesar de esto me quede libre, no por la dificultad de la materia, sino porque auténticamente me deje estar 
+
+
+        </p>
+        <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+        <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+            Burgos daba la teoría, era bastante bueno explicando los temas, y tambien el tiempo que estuve en su Comisión de practica pude comprender
+            los temas de mejor forma. Luego Fui a la Comisión de practica de Lamas, quien tambien daba la práctica bastante bien.
+
+        </p>
+
+
+        <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b> Probabilidad y Estadistica II </b></h3>
+        <p></p>
+        <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+        <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+            Tal y como indica el nombre es la continuación de Probabilidad I, ambas materias son bastante útiles y esta amplia los 
+            conceptos de las distribuciones de probabilidad.
+
+        </p>
+        <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+        <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+            El profesor Funes daba nuevamente la teoría. Era bastante continuista con lo que fue Probabilidad I, mismo modus
+             operandi, asi que en general bastante buen profesor. 
+
+        </p>
+        <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block">
+            Quien nos daba la práctica fue Risso, recuerdo que en la primera clase la vi entrar, pero no pensé que fuese la profesora, bajo 
+            mi punto de vista pasa como una alumna más. En general una buena profesora, explico cada distribución y resolvió dudas de los temas. 
+
+        </p>
+
+        <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b> Introduccion a sistemas operativos </b></h3>
+        <p></p>
+        <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+        <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+            A pesar de sentirse bastante cargada de contenido, en general no es tan larga la materia. Es tal y como indica el nombre 
+            una introducción a conceptos y algoritmos útiles en Sistemas Operativos, es bastante útil para comprender como funciona 
+            la computadora y varios componentes de esta. 
+
+        </p>
+        <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+        <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+            El profesor Fernando rivera daba la teoría. El profe era bastante comprensivo con los horarios, y aunque la clase 
+            era un lunes hasta las 10 de la noche, se esforzaba por terminar, aunque sea 10 minutos antes. Es un profesor lleno 
+            de conocimiento tanto practico como teórico, se nota que estuvo en todo tipo de empleos desde el inicio de la 
+            computación como ciencia. Un excelente profesor que se nota que tiene mucho más que contar. 
+
+        </p>
+        <p>
+            
+        </p>
+        <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b> Lenguajes II </b></h3>
+        <p></p>
+        <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+        <p></p>
+        <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block">  
+            Fue una materia bastante relajada, si bien había una buena cantidad de teoría, no era imposible el final ni mucho menos. Se 
+            vio mucho java y el uso de este.
+
+        </p>
+        <p></p>
+        <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+        <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+            La profesora Macaione se encargó de darnos la teoría de esta materia. Considero que fue una enseñanza bastante similar a 
+            la teoría de Estructura, no por el tema de los contenidos, si no más por el ritmo de la clase y la velocidad a la que veíamos
+             los temas. 
+
+        </p>
+        <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block">
+            Una vez más Lucero se encargó de la clase Práctica, no hay mucho más que mencionar, prácticamente la mencione a lo largo de 
+            este "blog" otras tres veces. Considero que es auténticamente buena profesora y se nota que tiene bastante experiencia. 
+ 
+ 
+        </p>
+
+        <h3 class="bg-orange-300 rounded-full mt-2 hover:bg-orange-300 px-2 py-2 display: inline-block"><b> Economia y Finanzas </b></h3>
+        <p></p>
+        <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>Mi opinión</u> </h4>
+        <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+            Esta materia es bastante continuista con lo que fue Economía de la empresa, no creo que hubiese mucha diferencia 
+            entre ambas más allá de los conceptos distintos. 
+
+
+        </p>
+        <h4 class="bg-orange-200 rounded-full hover:bg-orange-200 px-5 py-2 display: inline-block"> <u>El profesor</u> </h4>
+        <p class="bg-gray-200 rounded-full px-5 py-2 display: inline-block"> 
+            La dupla de Economía de la Empresa volvió a darnos la materia, ambos con el mismo modus operandi. No hay mucho más que agregar, 
+            salvo que bajo mi punto de vista las mejores clases son las que daban ambos juntos, y no tanto por separado, pues juntos expandían 
+            los conceptos presentados mientras contaban el contexto económico. 
+
+        </p>
+    
+
+
+    </div>
+
+    <footer>
+        <h1 class="bg-blue-300 rounded-full hover:bg-blue-300 px-5 py-2 display: inline-block"> Diego Mariano Cardozo 2025</h1>
+    </footer>
+
+    
+<!-- Basicamente Los scripts funcionan de la sig forma
+    on Toggle Menu cambia el nombre del icono que esta vinculado a su libreria, de modo que al momento de darle click (por eso hay un onclick en 
+    la seccion del icono) se active, de mismo modo al seleccionarlo se activa navLinks, que se encarga de darle el funcionamiento
+    de menu
+    Por otro lado mostrarContenido es una funcion que se encarga de cambiar el contenido usando id de diferentes divisiones
+    de modo que cambie simplemente de una a otra. Para lograr eto 
+    -->
+<script>
+    const navLinks=document.querySelector(".nav-links")
+    function onToggleMenu(e) {
+            e.name = e.name === "menu" ? "close" : "menu";
+            navLinks.classList.toggle("hidden");
+        }
+
+    function mostrarContenido(id) {
+        document.querySelectorAll('[id^="semestre-"]').forEach(div => div.classList.add('hidden'));
+        document.getElementById(id).classList.remove('hidden');
+        navLinks.classList.add("hidden");
+    }
+    
+</script>
+
+</body>
+
+
+
